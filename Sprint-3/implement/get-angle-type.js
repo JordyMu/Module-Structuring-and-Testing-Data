@@ -41,4 +41,9 @@ function getAngleType(angle) {
     return "Invalid angle";
   }
 }
-console.log(getAngleType(90));
+console.log(getAngleType(90)); // "Right angle"
+console.log(getAngleType(45)); // "Acute angle"
+console.log(getAngleType(120)); // "Obtuse angle"
+console.log(getAngleType(180)); // "Straight angle"
+console.log(getAngleType(270)); // "Reflex angle"
+console.log(getAngleType(400)); // "Invalid angle"
