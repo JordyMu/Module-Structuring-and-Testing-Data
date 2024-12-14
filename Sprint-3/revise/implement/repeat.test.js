@@ -26,16 +26,16 @@
 
 function repeat(str, count) {
   if (count < 0) {
-    return "Count cannot be negative"; // Return error message for negative count
+    return "Count cannot be negative"; // Return an error message if count is negative
   }
   if (count === 0) {
-    return ""; // Return empty string for count 0
+    return ""; // Return an empty string if count is 0
   }
-  return str.repeat(count); // Repeat the string for count > 0
+  return str.repeat(count); // Use the built-in repeat method to repeat the string count times
 }
 
-// Example usage
-console.log(repeat("abc", 3)); // "abcabcabc"
-console.log(repeat("abc", 1)); // "abc"
-console.log(repeat("abc", 0)); // ""
-console.log(repeat("abc", -2)); // "Count cannot be negative"
+// Test cases
+console.log(repeat("abc", 3)); // Output: "abcabcabc"
+console.log(repeat("abc", 1)); // Output: "abc"
+console.log(repeat("abc", 0)); // Output: ""
+console.log(repeat("abc", -2)); // Output: "Count cannot be negative"
