@@ -23,3 +23,19 @@
 // Given a target string str and a negative integer count,
 // When the repeat function is called with these inputs,
 // Then it should throw an error or return an appropriate error message, as negative counts are not valid.
+
+function repeat(str, count) {
+  if (count < 0) {
+    return "Count cannot be negative"; // Return error message for negative count
+  }
+  if (count === 0) {
+    return ""; // Return empty string for count 0
+  }
+  return str.repeat(count); // Repeat the string for count > 0
+}
+
+// Example usage
+console.log(repeat("abc", 3)); // "abcabcabc"
+console.log(repeat("abc", 1)); // "abc"
+console.log(repeat("abc", 0)); // ""
+console.log(repeat("abc", -2)); // "Count cannot be negative"
