@@ -3,3 +3,8 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+
+// Start with variable declare cityOfBirth before console.log
+
+const cityOfBirth = "Bolton"
+console.log(`I was born in ${cityOfBirth}`);
