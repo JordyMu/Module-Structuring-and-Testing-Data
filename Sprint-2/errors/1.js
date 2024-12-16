@@ -11,3 +11,14 @@ function convertToPercentage(decimalNumber) {
 }
 
 console.log(decimalNumber);
+
+
+// Error
+// decimalNumber is already exists in the function scope. redeclaring it using const results in a Error.
+// Fix
+// I have to remove the redeclaration of decimalNumber
+    // Ex: function convertToPercentage(decimalNumber) {
+      //   const percentage = `${decimalNumber * 100}%`;
+      //   return percentage;
+       // }
+       // console.log(convertToPercentage(0.5));
