@@ -41,3 +41,31 @@ console.log(rotateCharacter("7", 5)); // Output: "7" (unchanged, not a letter)
 // And the function should return the rotated character as a string (e.g., 'z' rotated by 3 should become 'c', 'Z' rotated by 3 should become 'C').
 console.log(rotateCharacter("z", 1)); // Output: "a" (preserves case, but wraps around)
 console.log(rotateCharacter("Y", 2)); // Output: "A" (preserves case, but wraps around)
+
+function rotateCharacter(char, shift) {
+  // Check if the character is a lowercase letter
+  if (char >= "a" && char <= "z") {
+    const start = "a".charCodeAt(0); // ASCII value of 'a'
+    const rotated = ((char.charCodeAt(0) - start + shift) % 26) + start;
+    return String.fromCharCode(rotated);
+  }
+
+  // Check if the character is an uppercase letter
+  if (char >= "A" && char <= "Z") {
+    const start = "A".charCodeAt(0); // ASCII value of 'A'
+    const rotated = ((char.charCodeAt(0) - start + shift) % 26) + start;
+    return String.fromCharCode(rotated);
+  }
+
+  // Return the character unchanged if it's not a letter
+  return char;
+}
+
+// Example test cases
+console.log(rotateCharacter("a", 3)); // Output: "d"
+console.log(rotateCharacter("f", 1)); // Output: "g"
+console.log(rotateCharacter("A", 3)); // Output: "D"
+console.log(rotateCharacter("F", 1)); // Output: "G"
+console.log(rotateCharacter("7", 5)); // Output: "7" (unchanged)
+console.log(rotateCharacter("z", 1)); // Output: "a" (wraps around)
+console.log(rotateCharacter("Y", 2)); // Output: "A" (wraps around)
