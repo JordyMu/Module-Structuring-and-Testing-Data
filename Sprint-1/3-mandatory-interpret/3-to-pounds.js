@@ -25,3 +25,9 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+// 3. Removes the 'P' character by taking a substring from the start up to one character before the end. Result: "399"
+// 8. Ensures the pence string is at least 3 characters long. Result with "399"
+// 9. Extracts the pounds portion. Result:"3"
+// 14. Extracts the last 2 characters as Result: "99"
+// 18. Outputs the formatted price in pounds and pence format. Returns the amount
+
