@@ -2,7 +2,7 @@
 // Predict and explain first BEFORE you run any code...
 
 /// The predition is the function will will throw a syntaxError, the function declaration function square(3) is invalid because 3 is a literal number.
-/// The error occurs because expectation i a valid parameter name in the function declaration
+
 
 
 
