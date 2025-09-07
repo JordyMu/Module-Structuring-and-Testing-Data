@@ -6,4 +6,4 @@ count = count + 1;
 // Describe what line 3 is doing, in particular focus on what = is doing
 
 //   = takes the value on the right(count + 1) store it in variable on the left (count)
-//   line 3 is incrementing
+//   line 3 is incrementing by 1
